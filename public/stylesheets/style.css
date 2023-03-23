@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  width: 700px;
+  margin-top: 40px;
+  background-color: #FF6B6B;
+  border-radius: 40px;
+  margin-bottom: 40px;
+}
+main #boton_empezar {
+  margin-top: 30px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  background-color: #de8d8b;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+main #p_empezar {
+  margin: 20px;
+  font-size: 20px;
+}
+main #titulo {
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main form h2 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+main form a {
+  padding: 20px;
+  background-color: rgb(45, 84, 182);
+  border-radius: 20px;
+  margin-top: 25px;
+  width: 350px;
+  text-decoration: none;
+  color: white;
+}
+main form p {
+  margin-top: 40px;
+  font-size: 40px;
+}
+main #seccion_resultado {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main #seccion_resultado section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 15px;
+}
+main #seccion_resultado section nav {
+  display: flex;
+  align-items: center;
+}
+main #seccion_resultado section nav p {
+  margin-right: 10px;
+}
+main #seccion_resultado section .respuesta_correcta {
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */

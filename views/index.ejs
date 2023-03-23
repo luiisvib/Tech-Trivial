@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <a href="/" id="titulo"><%= title %></a>
+      <form method="POST" action="/siguiente">
+        <h2><%= datos.pregunta %></h2>
+        
+        <% for (var j = 0; j < datos.opciones.length; j++) { %>
+          <a href="/comprobar/<%= datos.opciones[j] %>"><%= datos.opciones[j] %></a>
+        <% } %>
+        <p>Siguiente pregunta en <span id="countdown">6</span> segundos.</p>
+      </form>
+    
+  </main>
+
+  <script>
+    // Cuenta atrás de 6 segundos
+    var countdown = 6;
+    var countdownTimer = setInterval(function() {
+      countdown--;
+      if (countdown == 0) {
+        clearInterval(countdownTimer);
+        window.location.href = "/comprobar/false"; 
+      }
+      document.getElementById("countdown").innerHTML = countdown;
+    }, 1000);
+  </script>
+</body>
+</html>
+
+

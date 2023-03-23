@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <main id="main_resultado">
+      <a href="/" id="titulo"><%= title %></a>
+      <section id="seccion_resultado"> 
+        <% for (var i = 0; i < datos.length; i++) { %>
+            <section>
+                <% if (datos[i].correcta == datos_resultados[i]){ %>
+                    <nav>
+                        <p><%= datos[i].pregunta %></p>
+                        <p style="color:green;"><%= datos_resultados[i] %></p>
+                        <span style="color: green;" class="material-symbols-outlined">done</span>
+                    </nav>
+                <% }else{ %>
+                    <nav>
+                        <p><%= datos[i].pregunta %></p>
+                        <p style="color: red;"><%= datos_resultados[i] %></p>
+                        <span style="color: red;"  class="material-symbols-outlined">close</span>
+                    </nav>
+                    <p class="respuesta_correcta">La respuesta correcta era: <%= datos[i].correcta %></p>
+                <% } %>
+            </section>
+          <% } %>
+      </section>
+
+    </main>
+    </body>
+</html>
