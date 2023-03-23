@@ -28,8 +28,10 @@ main #boton_empezar {
   border-radius: 20px;
   box-shadow: 1px 1px 1px black, -1px -1px 1px black;
   background-color: #de8d8b;
-  color: black;
+}
+main #boton_empezar a {
   text-decoration: none;
+  color: black;
   font-size: 25px;
 }
 main #p_empezar {
