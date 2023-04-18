@@ -13,13 +13,11 @@
       <a href="/" id="titulo"><%= title %></a>
       <form method="POST" action="/siguiente">
         <h2><%= datos.pregunta %></h2>
-        
         <% for (var j = 0; j < datos.opciones.length; j++) { %>
           <a href="/comprobar/<%= datos.opciones[j] %>"><%= datos.opciones[j] %></a>
         <% } %>
         <p>Siguiente pregunta en <span id="countdown">8</span> segundos.</p>
       </form>
-    
   </main>
 
   <script>
