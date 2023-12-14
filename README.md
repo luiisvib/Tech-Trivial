@@ -10,5 +10,8 @@
 
 - **Contador de Puntuación:** La aplicación llevará un contador de las preguntas respondidas correctamente.
 
-- - **Resultado:** Al finalizar todas las preguntas se mostrarán las preguntas acertadas y las falladas con la respuesta correcta.
+- **Resultado:** Al finalizar todas las preguntas se mostrarán las preguntas acertadas y las falladas con la respuesta correcta.
 
+## Características
+- Node.js
+- Express.js
